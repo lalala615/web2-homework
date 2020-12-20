@@ -1,0 +1,172 @@
+/*
+* @Author: Administrator
+* @Date:   2020-12-19 12:39:05
+* @Last Modified by:   Administrator
+* @Last Modified time: 2020-12-19 17:55:48
+*/
+/*reset部分*/
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style-type: none;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+.after::after{
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+}
+body{
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+/*reset部分*/
+/*正式css*/
+body{
+	background-image: url('../images/泉此方和草原.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+#score_con{
+	width: 600px;
+	height: 100px;
+	position: fixed;
+	left: 600px;
+	top: 0px;
+	background-color: lightblue;
+}
+#score_con div{
+	float: left;
+	font-size: 30px;
+	height: 100px;
+	line-height: 100px;
+}
+#score_1{
+	margin-left: 200px;
+}
+
+#conteiner{
+	position: fixed;
+	left: 400px;
+	top: 100px;
+	width: 1056px;
+	height: 676px;
+	border: 1px solid grey;
+	background-color: lightblue;
+	opacity: 0.4;
+}
+#talk{
+	position: absolute;
+	left: 128px;
+	top: 50px;
+	width: 800px;
+	height: 500px;
+	font-size: 40px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	line-height: 200px
+}
+#buttons{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 0px;/*318px*/
+	height: 0px;
+	z-index: 100000;
+	border: 2px solid black;
+	display: none;
+}
+.btns{
+	/*每个总宽106px，总高56px*/
+	width: 100px;
+	height: 50px;
+	margin: 2px;
+	font-size: 35px;
+	color: black;
+	background-color: lightgoldenrodyellow;
+	border: 1px solid grey;
+	cursor: pointer;
+	display: inline-block;
+}
+#game{
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	display: none;
+}
+.cups{
+	cursor: pointer;
+	width: 200px;
+	height: 222px;
+	background-image: url('../images/cup.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: left;
+	display: none;
+	position: relative;
+}
+#suger{
+	width: 50px;
+	height: 50px;
+	background-image: url('../images/suger.png');
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+#restart{
+	width: 100px;
+	height: 30px;
+	background-color: burlywood;
+	line-height: 30px;
+	text-align: center;
+	position: fixed;
+	left: 400px;
+	top: 776px;
+}
+#check_scores{
+	cursor: pointer;
+	width: 100px;
+	height: 30px;
+	background-color: burlywood;
+	line-height: 30px;
+	text-align: center;
+	position: fixed;
+	left: 505px;
+	top: 776px;
+}
+#scores{
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	left: 505px;
+	top: 776px;
+	border: 1px solid grey;
+	background-color: lightblue;
+}
+#scores div{
+	font-size: 20px;
+	height: 30px;
+	line-height: 30px;
+}
+#exit{
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	color: red;
+	background-color: lightgoldenrodyellow;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
